@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>New York Times Search</title>
+            <script src="assets/javascript/app.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        </head>
+        <body>
+            <div class="container">
+                <div class="row">
+                    <div id="header" >
+                        <h2><i class="far fa-newspaper"></i>New York Times Search</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6><i class="far fa-newspaper"></i>Search Parameters</h6>
+                    <div class="jumbotron border border-primary">
+                        <label for="basic-url">Search Term:</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"></div>
+                            <input type="text" class="form-control" id="search-field" aria-describedby="basic-addon3">
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+                                <select class="form-control" id="number-field">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                                  <option>7</option>
+                                  <option>8</option>
+                                  <option>9</option>
+                                  <option>10</option>
+                                </select>
+                        </div>
+                        <label for="basic-url">Start Year(Optional):</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"></div>
+                            <input type="text" class="form-control" id="start-field" aria-describedby="basic-addon3">
+                        </div>
+                        <label for="basic-url">End Year(Optional):</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"></div>
+                            <input type="text" class="form-control" id="end-field" aria-describedby="basic-addon3">
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="search-button"><i class="fas fa-search">Search</i></button>
+                        <button type="button" class="btn btn-secondary" id="clear-button"><i class="far fa-trash-alt">Clear Results</i></button>
+                    </div>
+                </div>
+                <div class="row">
+                        <h6><i class="far fa-newspaper"></i>Search Parameters</h6>
+                            <div class="border border-primary" id="articlescss">
+                                <ol>
+                            
+                                </ol>
+                            </div>
+                </div>
+            </div>
+        </body>
+
+    </html>
